@@ -1,0 +1,12 @@
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Release\ConnectTest.exe.config
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Release\ConnectTest.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Release\ConnectTest.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Release\Google.Protobuf.dll
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Release\MySql.Data.dll
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Release\Google.Protobuf.xml
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Release\MySql.Data.xml
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\obj\Release\ConnectTest.csprojAssemblyReference.cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\obj\Release\ConnectTest.csproj.CoreCompileInputs.cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\obj\Release\ConnectTest.csproj.CopyComplete
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\obj\Release\ConnectTest.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\obj\Release\ConnectTest.pdb

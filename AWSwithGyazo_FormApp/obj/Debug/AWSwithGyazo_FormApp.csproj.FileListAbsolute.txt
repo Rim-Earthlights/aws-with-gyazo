@@ -1,0 +1,14 @@
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\bin\Debug\AWSwithGyazo_FormApp.exe.config
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\bin\Debug\AWSwithGyazo_FormApp.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\bin\Debug\AWSwithGyazo_FormApp.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.Properties.Resources.resources
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.csproj.GenerateResource.Cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.csproj.CoreCompileInputs.cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.AWS_With_Gyazo_Form.resources
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\bin\Debug\Google.Protobuf.dll
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\bin\Debug\MySql.Data.xml
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.csproj.CopyComplete
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.csprojAssemblyReference.cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.duplicateCheck.resources

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWS_with_Gyazo_console", "AWS_with_Gyazo\AWS_with_Gyazo_console.csproj", "{8BEF4517-1052-4F96-8658-2BC816A55E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSwithGyazo_FormApp", "AWSwithGyazo_FormApp\AWSwithGyazo_FormApp.csproj", "{D904380E-E764-423A-94B0-1372F88A0245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectTest", "ConnectTest\ConnectTest.csproj", "{727DA060-2CD8-4C31-AAD9-F2F868F16451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moveFiles", "moveFiles\moveFiles.csproj", "{C240B232-5E89-423B-9D73-BEAE9DE8216D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "awsSyncCheck", "awsSyncCheck\awsSyncCheck.csproj", "{70A21CAD-7FE1-4C16-B71C-FEA61A9E31B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipBoardCopy", "ClipBoardCopy\ClipBoardCopy\ClipBoardCopy.csproj", "{427BD80B-A847-41A6-9A10-763BEB41FA25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BEF4517-1052-4F96-8658-2BC816A55E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BEF4517-1052-4F96-8658-2BC816A55E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BEF4517-1052-4F96-8658-2BC816A55E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BEF4517-1052-4F96-8658-2BC816A55E20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D904380E-E764-423A-94B0-1372F88A0245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D904380E-E764-423A-94B0-1372F88A0245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D904380E-E764-423A-94B0-1372F88A0245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D904380E-E764-423A-94B0-1372F88A0245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{727DA060-2CD8-4C31-AAD9-F2F868F16451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{727DA060-2CD8-4C31-AAD9-F2F868F16451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{727DA060-2CD8-4C31-AAD9-F2F868F16451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{727DA060-2CD8-4C31-AAD9-F2F868F16451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C240B232-5E89-423B-9D73-BEAE9DE8216D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C240B232-5E89-423B-9D73-BEAE9DE8216D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C240B232-5E89-423B-9D73-BEAE9DE8216D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C240B232-5E89-423B-9D73-BEAE9DE8216D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70A21CAD-7FE1-4C16-B71C-FEA61A9E31B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A21CAD-7FE1-4C16-B71C-FEA61A9E31B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A21CAD-7FE1-4C16-B71C-FEA61A9E31B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A21CAD-7FE1-4C16-B71C-FEA61A9E31B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427BD80B-A847-41A6-9A10-763BEB41FA25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427BD80B-A847-41A6-9A10-763BEB41FA25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427BD80B-A847-41A6-9A10-763BEB41FA25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427BD80B-A847-41A6-9A10-763BEB41FA25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46F772A4-B2AF-4515-83AC-FE8A50C8F9E7}
+	EndGlobalSection
+EndGlobal

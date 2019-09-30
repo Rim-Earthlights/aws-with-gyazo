@@ -1,0 +1,16 @@
+D:\Visual Studio\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.exe.config
+D:\Visual Studio\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.exe
+D:\Visual Studio\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.pdb
+D:\Visual Studio\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.exe
+D:\Visual Studio\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.exe.config
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.csproj.CoreCompileInputs.cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\bin\Debug\Renci.SshNet.dll
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\bin\Debug\Renci.SshNet.xml
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.csproj.CopyComplete
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.csprojAssemblyReference.cache

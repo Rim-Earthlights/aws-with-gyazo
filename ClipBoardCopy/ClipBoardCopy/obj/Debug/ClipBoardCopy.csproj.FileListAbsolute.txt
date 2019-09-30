@@ -1,0 +1,12 @@
+D:\Visual Studio\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.exe.config
+D:\Visual Studio\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.csprojResolveAssemblyReference.cache
+D:\Visual Studio\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.exe
+D:\Visual Studio\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.pdb
+D:\Visual Studio\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.exe
+D:\Visual Studio\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.pdb
+D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.exe.config
+D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.exe
+D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.pdb
+D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.csproj.CoreCompileInputs.cache
+D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.exe
+D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.pdb

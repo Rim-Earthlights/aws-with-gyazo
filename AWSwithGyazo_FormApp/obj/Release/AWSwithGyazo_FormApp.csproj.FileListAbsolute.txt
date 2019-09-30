@@ -1,0 +1,10 @@
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\bin\Release\AWSwithGyazo_FormApp.exe.config
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\bin\Release\AWSwithGyazo_FormApp.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\bin\Release\AWSwithGyazo_FormApp.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.Properties.Resources.resources
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.csproj.GenerateResource.Cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.csproj.CoreCompileInputs.cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.AWS_With_Gyazo_Form.resources
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.duplicateCheck.resources

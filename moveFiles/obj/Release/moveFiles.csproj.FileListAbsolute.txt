@@ -1,0 +1,7 @@
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\bin\Release\moveFiles.exe.config
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\bin\Release\moveFiles.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\bin\Release\moveFiles.pdb
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\obj\Release\moveFiles.csprojAssemblyReference.cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\obj\Release\moveFiles.csproj.CoreCompileInputs.cache
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\obj\Release\moveFiles.exe
+D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\obj\Release\moveFiles.pdb
