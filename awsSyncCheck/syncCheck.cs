@@ -41,15 +41,14 @@ namespace awsSyncCheck {
                     DateTime date = file.CreationTime;
                     long length = file.Length;
                     string fileName = file.FullName.Replace(Path.Combine(source, dest) + "\\", "").Replace("\\", "/");
-                    string s = String.Format("{0} {1} {2}", date.ToString(), length.ToString(), fileName);
-                    ListObject lo = new ListObject(s);
+                    ListObject lo = new ListObject(date, length, fileName);
                     local.Add(lo);
                 }
 
                 // S3側
                 var s3data = lsCommand(dest);
 
-                $ //TODO;
+                 //TODO;
 
                 Console.ReadKey();
             }
@@ -134,6 +133,11 @@ namespace awsSyncCheck {
                         this.getfileName += list[i];
                     }
                 }
+            }
+            public ListObject(DateTime date, long fileSize, string fileName) {
+                this.getdateTime = date;
+                this.getf_Size = fileSize;
+                this.getfileName = fileName;
             }
         }
 
