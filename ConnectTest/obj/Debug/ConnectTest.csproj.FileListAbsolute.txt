@@ -10,3 +10,15 @@ D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Debug\Goog
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\bin\Debug\MySql.Data.xml
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\obj\Debug\ConnectTest.csproj.CopyComplete
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\ConnectTest\obj\Debug\ConnectTest.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\bin\Debug\ConnectTest.exe.config
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\bin\Debug\ConnectTest.exe
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\bin\Debug\ConnectTest.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\bin\Debug\Google.Protobuf.dll
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\bin\Debug\MySql.Data.dll
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\bin\Debug\Google.Protobuf.xml
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\bin\Debug\MySql.Data.xml
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\obj\Debug\ConnectTest.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\obj\Debug\ConnectTest.csproj.CoreCompileInputs.cache
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\obj\Debug\ConnectTest.csproj.CopyComplete
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\obj\Debug\ConnectTest.exe
+D:\Program\vs2019\repos\aws-with-gyazo\ConnectTest\obj\Debug\ConnectTest.pdb

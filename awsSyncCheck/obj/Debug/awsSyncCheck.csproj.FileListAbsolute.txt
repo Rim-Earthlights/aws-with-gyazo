@@ -1,0 +1,7 @@
+D:\Program\vs2019\repos\aws-with-gyazo\awsSyncCheck\bin\Debug\awsSyncCheck.exe.config
+D:\Program\vs2019\repos\aws-with-gyazo\awsSyncCheck\bin\Debug\awsSyncCheck.exe
+D:\Program\vs2019\repos\aws-with-gyazo\awsSyncCheck\bin\Debug\awsSyncCheck.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\awsSyncCheck\obj\Debug\awsSyncCheck.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\awsSyncCheck\obj\Debug\awsSyncCheck.csproj.CoreCompileInputs.cache
+D:\Program\vs2019\repos\aws-with-gyazo\awsSyncCheck\obj\Debug\awsSyncCheck.exe
+D:\Program\vs2019\repos\aws-with-gyazo\awsSyncCheck\obj\Debug\awsSyncCheck.pdb

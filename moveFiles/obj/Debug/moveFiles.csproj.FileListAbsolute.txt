@@ -5,3 +5,7 @@ D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\obj\Debug\moveFi
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\obj\Debug\moveFiles.csproj.CoreCompileInputs.cache
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\obj\Debug\moveFiles.exe
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\moveFiles\obj\Debug\moveFiles.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\moveFiles\obj\Debug\moveFiles.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\moveFiles\obj\Debug\moveFiles.csproj.CoreCompileInputs.cache
+D:\Program\vs2019\repos\aws-with-gyazo\moveFiles\obj\Debug\moveFiles.exe
+D:\Program\vs2019\repos\aws-with-gyazo\moveFiles\obj\Debug\moveFiles.pdb

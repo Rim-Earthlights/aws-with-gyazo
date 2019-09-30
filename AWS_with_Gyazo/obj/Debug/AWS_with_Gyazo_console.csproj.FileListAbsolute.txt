@@ -1,0 +1,10 @@
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.exe.config
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.exe
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\bin\Debug\AWS_with_Gyazo.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\bin\Debug\Renci.SshNet.dll
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\bin\Debug\Renci.SshNet.xml
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo_console.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo_console.csproj.CoreCompileInputs.cache
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo_console.csproj.CopyComplete
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.exe
+D:\Program\vs2019\repos\aws-with-gyazo\AWS_with_Gyazo\obj\Debug\AWS_with_Gyazo.pdb

@@ -10,3 +10,10 @@ D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\bin\Debug\Cli
 D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.csproj.CoreCompileInputs.cache
 D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.exe
 D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.exe.config
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.exe
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\bin\Debug\ClipBoardCopy.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.csproj.CoreCompileInputs.cache
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.exe
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\obj\Debug\ClipBoardCopy.pdb
