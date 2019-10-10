@@ -3,12 +3,13 @@
     class global
     {
         //copy, erase, sync command
-        internal static readonly string AWS_cp       = "aws s3 cp %SOURCE% s3://%UPPATH% --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers";
-        internal static readonly string AWS_cp_local = "aws s3 cp s3://%UPPATH% %SOURCE%";
-        internal static readonly string AWS_rm       = "aws s3 rm s3://%UPPATH%/%SOURCE%";
-        // internal static readonly string AWS_Sync_toLocal = "aws s3 sync s3://%UPPATH% %SOURCE%";
-        // internal static readonly string AWS_Sync_toAWS = "aws s3 sync %SOURCE% s3://%UPPATH% --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers";
-        internal static readonly string AWS_ls       = "aws s3 ls s3://%UPPATH%";
+        internal static readonly string AWS_cp            = "aws s3 cp %SOURCE% s3://%UPPATH% --acl public-read";
+        internal static readonly string AWS_cp_local      = "aws s3 cp s3://%UPPATH% %SOURCE%";
+        internal static readonly string AWS_rm            = "aws s3 rm s3://%UPPATH%/%SOURCE%";
+        internal static readonly string AWS_Sync_Local    = "aws s3 sync %SOURCE% s3://%UPPATH% --acl public-read";
+        internal static readonly string AWS_Sync_S3       = "aws s3 sync s3://%UPPATH% %SOURCE% --acl public-read";
+        internal static readonly string AWS_ls            = "aws s3 ls s3://%UPPATH%";
+        internal static readonly string AWS_Add_Read_Cli  = "aws s3api put-object-acl --bucket %BUCKET% --key %FILENAME% --acl public-read";
 
 
         // load from setting.ini

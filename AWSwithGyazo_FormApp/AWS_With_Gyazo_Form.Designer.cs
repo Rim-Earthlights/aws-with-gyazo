@@ -34,6 +34,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.機能の再開停止ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.サーバーとデータを同期するToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ローカルからS3へToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.s3からローカルへToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.プログラムの終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +54,7 @@
             this.サーバーとデータを同期するToolStripMenuItem,
             this.プログラムの終了ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(198, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(198, 92);
             // 
             // 機能の再開停止ToolStripMenuItem
             // 
@@ -63,10 +65,27 @@
             // 
             // サーバーとデータを同期するToolStripMenuItem
             // 
+            this.サーバーとデータを同期するToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ローカルからS3へToolStripMenuItem,
+            this.s3からローカルへToolStripMenuItem});
             this.サーバーとデータを同期するToolStripMenuItem.Name = "サーバーとデータを同期するToolStripMenuItem";
             this.サーバーとデータを同期するToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.サーバーとデータを同期するToolStripMenuItem.Text = "サーバーとデータを同期する";
             this.サーバーとデータを同期するToolStripMenuItem.Click += new System.EventHandler(this.サーバーとデータを同期するToolStripMenuItem_Click);
+            // 
+            // ローカルからS3へToolStripMenuItem
+            // 
+            this.ローカルからS3へToolStripMenuItem.Name = "ローカルからS3へToolStripMenuItem";
+            this.ローカルからS3へToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ローカルからS3へToolStripMenuItem.Text = "ローカルからS3へ";
+            this.ローカルからS3へToolStripMenuItem.Click += new System.EventHandler(this.ローカルからS3へToolStripMenuItem_Click);
+            // 
+            // s3からローカルへToolStripMenuItem
+            // 
+            this.s3からローカルへToolStripMenuItem.Name = "s3からローカルへToolStripMenuItem";
+            this.s3からローカルへToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.s3からローカルへToolStripMenuItem.Text = "S3からローカルへ";
+            this.s3からローカルへToolStripMenuItem.Click += new System.EventHandler(this.S3からローカルへToolStripMenuItem_Click);
             // 
             // プログラムの終了ToolStripMenuItem
             // 
@@ -75,13 +94,13 @@
             this.プログラムの終了ToolStripMenuItem.Text = "プログラムの終了";
             this.プログラムの終了ToolStripMenuItem.Click += new System.EventHandler(this.ExitProgram_toolstripClick);
             // 
-            // Form1
+            // AWS_With_Gyazo_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "AWS_With_Gyazo_Form";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -97,6 +116,8 @@
         private System.Windows.Forms.ToolStripMenuItem 機能の再開停止ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem プログラムの終了ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem サーバーとデータを同期するToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ローカルからS3へToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem s3からローカルへToolStripMenuItem;
     }
 }
 
