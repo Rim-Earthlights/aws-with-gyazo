@@ -8,3 +8,13 @@ D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\R
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.pdb
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.AWS_With_Gyazo_Form.resources
 D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.duplicateCheck.resources
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\bin\Release\AWSwithGyazo_FormApp.exe.config
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\bin\Release\AWSwithGyazo_FormApp.exe
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\bin\Release\AWSwithGyazo_FormApp.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.AWS_With_Gyazo_Form.resources
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.Properties.Resources.resources
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.csproj.GenerateResource.cache
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.csproj.CoreCompileInputs.cache
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.exe
+D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.pdb

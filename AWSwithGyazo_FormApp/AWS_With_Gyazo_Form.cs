@@ -232,10 +232,11 @@ namespace AWSwithGyazo_FormApp {
         /// </summary>
         /// <param name="type">c = copy | r = erase | s = sync </param>
         /// <param name="source_path">フルパス</param>
-        public void File_manage(char type, string source_path) {
+        /// <param name="syncMode">同期用　True=[S3->Local] False=[Local->S3]</param>
+        public void File_manage(char type, string source_path, bool syncMode = false) {
             string uploadPath = null;
             if (!string.IsNullOrEmpty(source_path)) {
-                uploadPath = System.IO.Path.GetDirectoryName(source_path).Replace(global.watchPath, "");
+                uploadPath = Path.GetDirectoryName(source_path).Replace(global.watchPath, "");
             }
 
             // MessageBox.Show(aws_rm_command);
@@ -248,29 +249,43 @@ namespace AWSwithGyazo_FormApp {
 
                     ExcuteCmd(aws_cp_command, true);
 
-                    notify_AWS.BalloonTipText = System.IO.Path.GetFileName(source_path) + "をアップロードしました";
+                    notify_AWS.BalloonTipText = Path.GetFileName(source_path) + "をアップロードしました";
                     System.Media.SystemSounds.Asterisk.Play();
                     notify_AWS.ShowBalloonTip(800);
                     // System.Windows.Forms.Clipboard.SetText(AWS_URL + System.IO.Path.GetFileName(source_path));
                     break;
                 case 'r':
                     string aws_rm_command = global.AWS_rm.Replace("%SOURCE%",
-                        "\"" + System.IO.Path.GetFileName(source_path) + "\"");
+                        "\"" + Path.GetFileName(source_path) + "\"");
                     aws_rm_command = aws_rm_command.Replace("%UPPATH%", uploadPath.Replace(@"\", @"/"));
 
                     ExcuteCmd(aws_rm_command, true);
 
-                    notify_AWS.BalloonTipText = System.IO.Path.GetFileName(source_path) + "を削除しました";
+                    notify_AWS.BalloonTipText = Path.GetFileName(source_path) + "を削除しました";
                     System.Media.SystemSounds.Asterisk.Play();
                     notify_AWS.ShowBalloonTip(800);
                     break;
                 case 's':
                     Watcher_state(false, true);
 
-                    System.IO.Directory.GetFiles("", "*.*", SearchOption.AllDirectories);
+                    string aws_sync_command;
 
-                    Console.ReadKey();
-
+                    var bucketName = Directory.GetDirectories(global.watchPath).Select(x => x = x.Replace(global.watchPath, ""));
+                    foreach (var item in bucketName) {
+                        if (syncMode) {
+                            aws_sync_command = global.AWS_Sync_S3.Replace("%SOURCE%", global.watchPath + "\\" + item);
+                            aws_sync_command = aws_sync_command.Replace("%UPPATH%", item);
+                        }
+                        else {
+                            aws_sync_command = global.AWS_Sync_Local.Replace("%SOURCE%", global.watchPath + "\\" + item);
+                            aws_sync_command = aws_sync_command.Replace("%UPPATH%", item);
+                        }
+                        notify_AWS.BalloonTipText = item + "フォルダの同期を開始";
+                        System.Media.SystemSounds.Asterisk.Play();
+                        notify_AWS.ShowBalloonTip(800);
+                        ExcuteCmd(aws_sync_command, true);
+                    }
+                    // ログがほしい
                     Watcher_state(true, true);
                     break;
                 default:
@@ -336,7 +351,7 @@ namespace AWSwithGyazo_FormApp {
         }
 
         private void サーバーとデータを同期するToolStripMenuItem_Click(object sender, EventArgs e) {
-            File_manage(FILE_MOD_SYNC, global.watchPath);
+            // File_manage(FILE_MOD_SYNC, global.watchPath);
         }
 
         public void ExcuteCmd(string Arguments, bool wait = false) {
@@ -381,7 +396,7 @@ namespace AWSwithGyazo_FormApp {
                 this.getf_Size = -1;
                 this.getfileName = list[1];
             }
-            else if (list.Count() == 4) {
+            else if (list.Count() > 3) {
                 string date = String.Format("{0} {1}", list[0], list[1]);
 
                 if (DateTime.TryParse(date, out DateTime dt)) {
@@ -393,8 +408,16 @@ namespace AWSwithGyazo_FormApp {
                 }
 
                 this.getf_Size = long.Parse(list[2]);
-                this.getfileName = list[3];
+                this.getfileName = "";
+                for (int i = 3; i < list.Count(); i++) {
+                    this.getfileName += list[i];
+                }
             }
+        }
+        public ListObject(DateTime date, long fileSize, string fileName) {
+            this.getdateTime = date;
+            this.getf_Size = fileSize;
+            this.getfileName = fileName;
         }
     }
 
