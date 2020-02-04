@@ -48,7 +48,7 @@ namespace ClipBoardCopy
             if (args.Count() < 1 || args.Count() > 1)
             {
                 // Console.WriteLine("ERROR: Arguments is null.");
-                System.Media.SystemSounds.Asterisk.Play();
+                // System.Media.SystemSounds.Asterisk.Play();
                 notify.BalloonTipText = "引数に誤りがあります。";
                 notify.ShowBalloonTip(1000);
                 notify.Visible = false;
@@ -61,6 +61,7 @@ namespace ClipBoardCopy
                 string fileName = System.IO.Path.GetFileName(fullPath);
                 string aws_url = "";
                 string watch_path = "";
+                string backup_path = "";
                 // MessageBox.Show(fileName);
                 // read setting file
                 ArrayList Ar = new ArrayList();
@@ -79,13 +80,25 @@ namespace ClipBoardCopy
                     {
                         watch_path = Ar[i].ToString().Replace("WATCH=", "");
                     }
+                    else if (HasString(Ar[i].ToString(), "BACKUP_PATH=")) {
+                        backup_path = Ar[i].ToString().Replace("BACKUP_PATH=", "");
+                    }
                     else if (HasString(Ar[i].ToString(), "URL="))
                     {
                         aws_url = Ar[i].ToString().Replace("URL=", "");
                     }
                 }
+                string path = "";
 
-                string path = fullPath.Replace(watch_path,"");
+                if (fullPath.Contains(watch_path)) {
+                     path = fullPath.Replace(watch_path, "");
+                }
+                else if (fullPath.Contains(backup_path)) {
+                    path = fullPath.Replace(backup_path, "");
+                }
+                if (path == fullPath) {
+                    Application.Exit();
+                }
                 path = path.Replace("\\", "/");
                 var pathlist = path.Split('/');
                 var pathEncoded = pathlist.Select(x => System.Web.HttpUtility.UrlEncode(x));

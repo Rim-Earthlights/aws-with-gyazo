@@ -11,13 +11,13 @@
         internal static readonly string AWS_ls            = "aws s3 ls s3://%UPPATH%";
         internal static readonly string AWS_Add_Read_Cli  = "aws s3api put-object-acl --bucket %BUCKET% --key %FILENAME% --acl public-read";
 
-
         // load from setting.ini
         internal static string watchPath = "";
         internal static int SyncTime = 0;
         internal static readonly string settingFile = "setting.ini";
         internal static string awsId = null;
         internal static string awsKey = null;
+        internal static string backupPath = "";
 
 
         // FileSystemWatcher 
@@ -25,6 +25,9 @@
 
         // Watcher Status
         internal static bool enable_watch;
+
+        // state auto backup
+        internal static bool enable_backup;
 
         // Save copied File Path
         // internal static string beforePath = "";

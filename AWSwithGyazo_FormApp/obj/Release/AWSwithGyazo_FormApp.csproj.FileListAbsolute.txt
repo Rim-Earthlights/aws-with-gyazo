@@ -15,6 +15,5 @@ D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithG
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.AWS_With_Gyazo_Form.resources
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.Properties.Resources.resources
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.csproj.GenerateResource.cache
-D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.csproj.CoreCompileInputs.cache
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.exe
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Release\AWSwithGyazo_FormApp.pdb

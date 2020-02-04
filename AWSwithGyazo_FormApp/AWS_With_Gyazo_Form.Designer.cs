@@ -36,6 +36,9 @@
             this.サーバーとデータを同期するToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ローカルからS3へToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.s3からローカルへToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mStrip_AutoBackup = new System.Windows.Forms.ToolStripMenuItem();
+            this.mStrip_EnableBackup = new System.Windows.Forms.ToolStripMenuItem();
+            this.mStrip_DisableBackup = new System.Windows.Forms.ToolStripMenuItem();
             this.プログラムの終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,9 +55,10 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.機能の再開停止ToolStripMenuItem,
             this.サーバーとデータを同期するToolStripMenuItem,
+            this.mStrip_AutoBackup,
             this.プログラムの終了ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(198, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(198, 114);
             // 
             // 機能の再開停止ToolStripMenuItem
             // 
@@ -76,16 +80,39 @@
             // ローカルからS3へToolStripMenuItem
             // 
             this.ローカルからS3へToolStripMenuItem.Name = "ローカルからS3へToolStripMenuItem";
-            this.ローカルからS3へToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ローカルからS3へToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.ローカルからS3へToolStripMenuItem.Text = "ローカルからS3へ";
             this.ローカルからS3へToolStripMenuItem.Click += new System.EventHandler(this.ローカルからS3へToolStripMenuItem_Click);
             // 
             // s3からローカルへToolStripMenuItem
             // 
             this.s3からローカルへToolStripMenuItem.Name = "s3からローカルへToolStripMenuItem";
-            this.s3からローカルへToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.s3からローカルへToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.s3からローカルへToolStripMenuItem.Text = "S3からローカルへ";
             this.s3からローカルへToolStripMenuItem.Click += new System.EventHandler(this.S3からローカルへToolStripMenuItem_Click);
+            // 
+            // mStrip_AutoBackup
+            // 
+            this.mStrip_AutoBackup.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mStrip_EnableBackup,
+            this.mStrip_DisableBackup});
+            this.mStrip_AutoBackup.Name = "mStrip_AutoBackup";
+            this.mStrip_AutoBackup.Size = new System.Drawing.Size(197, 22);
+            this.mStrip_AutoBackup.Text = "自動バックアップ";
+            // 
+            // mStrip_EnableBackup
+            // 
+            this.mStrip_EnableBackup.Name = "mStrip_EnableBackup";
+            this.mStrip_EnableBackup.Size = new System.Drawing.Size(180, 22);
+            this.mStrip_EnableBackup.Text = "行う";
+            this.mStrip_EnableBackup.Click += new System.EventHandler(this.mStrip_EnableBackup_Click);
+            // 
+            // mStrip_DisableBackup
+            // 
+            this.mStrip_DisableBackup.Name = "mStrip_DisableBackup";
+            this.mStrip_DisableBackup.Size = new System.Drawing.Size(180, 22);
+            this.mStrip_DisableBackup.Text = "行わない";
+            this.mStrip_DisableBackup.Click += new System.EventHandler(this.mStrip_DisableBackup_Click);
             // 
             // プログラムの終了ToolStripMenuItem
             // 
@@ -118,6 +145,9 @@
         private System.Windows.Forms.ToolStripMenuItem サーバーとデータを同期するToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ローカルからS3へToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem s3からローカルへToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mStrip_AutoBackup;
+        private System.Windows.Forms.ToolStripMenuItem mStrip_EnableBackup;
+        private System.Windows.Forms.ToolStripMenuItem mStrip_DisableBackup;
     }
 }
 

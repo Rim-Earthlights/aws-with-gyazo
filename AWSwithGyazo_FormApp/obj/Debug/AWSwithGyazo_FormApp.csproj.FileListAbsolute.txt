@@ -15,13 +15,9 @@ D:\Program\Visual Studio 2015\Projects\AWS_with_Gyazo\AWSwithGyazo_FormApp\obj\D
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\bin\Debug\AWSwithGyazo_FormApp.exe.config
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\bin\Debug\AWSwithGyazo_FormApp.exe
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\bin\Debug\AWSwithGyazo_FormApp.pdb
-D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\bin\Debug\Google.Protobuf.dll
-D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\bin\Debug\MySql.Data.xml
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.csprojAssemblyReference.cache
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.AWS_With_Gyazo_Form.resources
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.Properties.Resources.resources
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.csproj.GenerateResource.cache
-D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.csproj.CoreCompileInputs.cache
-D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.csproj.CopyComplete
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.exe
 D:\Program\vs2019\repos\aws-with-gyazo\AWSwithGyazo_FormApp\obj\Debug\AWSwithGyazo_FormApp.pdb

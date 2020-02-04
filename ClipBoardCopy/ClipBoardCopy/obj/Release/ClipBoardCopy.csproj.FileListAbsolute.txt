@@ -5,3 +5,9 @@ D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Release\C
 D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Release\ClipBoardCopy.exe
 D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Release\ClipBoardCopy.pdb
 D:\Program\Visual Studio 2015\Projects\ClipBoardCopy\ClipBoardCopy\obj\Release\ClipBoardCopy.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\bin\Release\ClipBoardCopy.exe.config
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\bin\Release\ClipBoardCopy.exe
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\bin\Release\ClipBoardCopy.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\obj\Release\ClipBoardCopy.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\obj\Release\ClipBoardCopy.exe
+D:\Program\vs2019\repos\aws-with-gyazo\ClipBoardCopy\ClipBoardCopy\obj\Release\ClipBoardCopy.pdb

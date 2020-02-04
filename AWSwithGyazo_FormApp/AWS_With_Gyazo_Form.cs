@@ -74,6 +74,15 @@ namespace AWSwithGyazo_FormApp {
                 global.awsId = conf.GetSettingData("AWSID");
                 global.awsKey = conf.GetSettingData("AWSKEY");
 
+                global.backupPath = conf.GetSettingData("BACKUP_PATH");
+
+                if (!String.IsNullOrWhiteSpace(global.backupPath)) { 
+                    global.enable_backup = true; 
+                }
+                else { 
+                    global.enable_backup = false; 
+                }
+
                 Watcher_create();
                 Watcher_state(true, false);
                 this.WindowState = FormWindowState.Minimized;
@@ -83,6 +92,7 @@ namespace AWSwithGyazo_FormApp {
                 File.Create("setting.ini");
                 using (StreamWriter sw = new StreamWriter(@"setting.ini")) {
                     sw.Write("WATCH=");
+                    sw.Write("BACKUP_PATH=");
                 }
 
                 MessageBox.Show("setting.iniを作成しました。" + Environment.NewLine + "監視するパスを指定してください。"); ;
@@ -250,9 +260,18 @@ namespace AWSwithGyazo_FormApp {
                     ExcuteCmd(aws_cp_command, true);
 
                     notify_AWS.BalloonTipText = Path.GetFileName(source_path) + "をアップロードしました";
-                    System.Media.SystemSounds.Asterisk.Play();
+                    // System.Media.SystemSounds.Asterisk.Play();
                     notify_AWS.ShowBalloonTip(800);
                     // System.Windows.Forms.Clipboard.SetText(AWS_URL + System.IO.Path.GetFileName(source_path));
+
+                    if (global.enable_backup) {
+                        if (System.IO.Directory.Exists(global.backupPath)) {
+                            string tmpDistDir = source_path.Replace(global.watchPath, "");
+                            tmpDistDir = Path.Combine(global.backupPath, tmpDistDir);
+                            System.IO.File.Copy(source_path, tmpDistDir, true);
+                        }
+                    }
+
                     break;
                 case 'r':
                     string aws_rm_command = global.AWS_rm.Replace("%SOURCE%",
@@ -262,8 +281,18 @@ namespace AWSwithGyazo_FormApp {
                     ExcuteCmd(aws_rm_command, true);
 
                     notify_AWS.BalloonTipText = Path.GetFileName(source_path) + "を削除しました";
-                    System.Media.SystemSounds.Asterisk.Play();
+                    // System.Media.SystemSounds.Asterisk.Play();
                     notify_AWS.ShowBalloonTip(800);
+
+                    if (global.enable_backup) {
+                        string tmpDistDir = source_path.Replace(global.watchPath, "");
+                        tmpDistDir = Path.Combine(global.backupPath, tmpDistDir);
+                        if (System.IO.File.Exists(tmpDistDir)) {
+                            if (MessageBox.Show("バックアップフォルダからも削除しますか？", "確認", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                                System.IO.File.Delete(tmpDistDir);
+                            }
+                        }
+                    }
                     break;
                 case 's':
                     Watcher_state(false, true);
@@ -281,54 +310,16 @@ namespace AWSwithGyazo_FormApp {
                             aws_sync_command = aws_sync_command.Replace("%UPPATH%", item);
                         }
                         notify_AWS.BalloonTipText = item + "フォルダの同期を開始";
-                        System.Media.SystemSounds.Asterisk.Play();
+                        // System.Media.SystemSounds.Asterisk.Play();
                         notify_AWS.ShowBalloonTip(800);
                         ExcuteCmd(aws_sync_command, true);
                     }
-                    // ログがほしい
                     Watcher_state(true, true);
                     break;
                 default:
                     break;
             }
         }
-
-        /// <summary>
-        /// s3サーバのファイル一覧を取得して返す, はず(覚えてないし多分今参照されてない)
-        /// </summary>
-        /// <param name="dir"></param>
-        /// <returns></returns>
-        public Dictionary<string, List<string>> lsCommand(string dir) {
-            var psInfo = new ProcessStartInfo {
-                FileName = "cmd.exe",
-                Arguments = "/c " + global.AWS_ls.Replace("%UPPATH%", dir),
-                // Arguments = "/c aws s3 ls s3://gyazo-upload",
-                CreateNoWindow = true,
-                UseShellExecute = false,
-                RedirectStandardOutput = true,
-                // RedirectStandardError = true,
-                // StandardOutputEncoding = Encoding.UTF8
-            };
-            var p = Process.Start(psInfo);
-
-            var s3data = new Dictionary<string, List<string>>();
-            s3data.Add("file", new List<string>());
-            s3data.Add("dir", new List<string>());
-            string o_data = null;
-            while (!String.IsNullOrEmpty(o_data = p.StandardOutput.ReadLine())) {
-                ListObject s3 = new ListObject(o_data);
-                if (s3.getf_Size > 0) {
-                    s3data["file"].Add(s3.getfileName);
-                }
-                else if (s3.getf_Size == -1) {
-                    // add dir list
-                    s3data["dir"].Add(s3.getfileName);
-                }
-            }
-
-            return s3data;
-        }
-
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e) {
             try {
@@ -354,21 +345,25 @@ namespace AWSwithGyazo_FormApp {
             // File_manage(FILE_MOD_SYNC, global.watchPath);
         }
 
+        /// <summary>
+        /// 指定されたコマンドを実行します。
+        /// </summary>
+        /// <param name="Arguments">起動引数(cmd.exe /c [Arguments])</param>
+        /// <param name="wait">処理の終了を待つかどうか</param>
         public void ExcuteCmd(string Arguments, bool wait = false) {
 
             ProcessStartInfo excInfo = new ProcessStartInfo {
                 FileName = "cmd.exe",
                 Arguments = "/c " + Arguments,
+                UseShellExecute = false,
                 CreateNoWindow = true,
                 WindowStyle = ProcessWindowStyle.Hidden,
             };
             Process exCmd = new Process { StartInfo = excInfo, };
             exCmd.Start();
-
             if (wait) {
                 exCmd.WaitForExit();
             }
-
             return;
         }
 
@@ -379,52 +374,13 @@ namespace AWSwithGyazo_FormApp {
         private void S3からローカルへToolStripMenuItem_Click(object sender, EventArgs e) {
             File_manage(FILE_MOD_SYNC, null, true);
         }
-    }
 
-    /// <summary>
-    /// ファイル情報格納クラス 整理用です
-    /// </summary>
-    class ListObject {
-        public DateTime getdateTime { get; private set; }
-        public long getf_Size { get; private set; }
-        public string getfileName { get; private set; }
-
-
-        public ListObject(string line) {
-            // split string data (date, time, f_size, fineName);
-            List<string> list = new List<string>();
-            string[] temp = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (var item in temp) {
-                list.Add(item);
-            }
-
-            if (list.Count() == 2) {
-                this.getdateTime = DateTime.Now;
-                this.getf_Size = -1;
-                this.getfileName = list[1];
-            }
-            else if (list.Count() > 3) {
-                string date = String.Format("{0} {1}", list[0], list[1]);
-
-                if (DateTime.TryParse(date, out DateTime dt)) {
-                    // set data
-                    this.getdateTime = dt;
-                }
-                else {
-                    this.getdateTime = DateTime.Now;
-                }
-
-                this.getf_Size = long.Parse(list[2]);
-                this.getfileName = "";
-                for (int i = 3; i < list.Count(); i++) {
-                    this.getfileName += list[i];
-                }
-            }
+        private void mStrip_EnableBackup_Click(object sender, EventArgs e) {
+            global.enable_backup = true;
         }
-        public ListObject(DateTime date, long fileSize, string fileName) {
-            this.getdateTime = date;
-            this.getf_Size = fileSize;
-            this.getfileName = fileName;
+
+        private void mStrip_DisableBackup_Click(object sender, EventArgs e) {
+            global.enable_backup = false;
         }
     }
 
