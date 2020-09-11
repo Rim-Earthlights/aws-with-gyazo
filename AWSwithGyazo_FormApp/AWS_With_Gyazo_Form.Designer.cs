@@ -99,6 +99,7 @@
             this.mStrip_AutoBackup.Name = "mStrip_AutoBackup";
             this.mStrip_AutoBackup.Size = new System.Drawing.Size(197, 22);
             this.mStrip_AutoBackup.Text = "自動バックアップ";
+            this.mStrip_AutoBackup.Visible = false;
             // 
             // mStrip_EnableBackup
             // 

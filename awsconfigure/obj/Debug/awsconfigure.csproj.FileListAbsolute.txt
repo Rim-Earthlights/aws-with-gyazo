@@ -1,0 +1,6 @@
+D:\Program\vs2019\repos\aws-with-gyazo\awsconfigure\bin\Debug\awsconfigure.dll
+D:\Program\vs2019\repos\aws-with-gyazo\awsconfigure\bin\Debug\awsconfigure.pdb
+D:\Program\vs2019\repos\aws-with-gyazo\awsconfigure\obj\Debug\awsconfigure.csprojAssemblyReference.cache
+D:\Program\vs2019\repos\aws-with-gyazo\awsconfigure\obj\Debug\awsconfigure.csproj.CoreCompileInputs.cache
+D:\Program\vs2019\repos\aws-with-gyazo\awsconfigure\obj\Debug\awsconfigure.dll
+D:\Program\vs2019\repos\aws-with-gyazo\awsconfigure\obj\Debug\awsconfigure.pdb

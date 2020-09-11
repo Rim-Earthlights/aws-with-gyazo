@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using Amazon;
+using Amazon.Runtime;
 
 namespace AWSwithGyazo_FormApp {
     public partial class AWS_With_Gyazo_Form : Form {
@@ -62,26 +64,29 @@ namespace AWSwithGyazo_FormApp {
 
                 Configure conf = new Configure();
 
-                global.watchPath = conf.GetSettingData("WATCH");
+                global.watchPath = conf.GetSetting("WATCH");
 
-                if (int.TryParse(conf.GetSettingData("SYNCTIME"), out int result)) {
+                if (int.TryParse(conf.GetSetting("SYNCTIME"), out int result)) {
                     global.SyncTime = result;
                 }
                 else {
                     global.SyncTime = -1;
                 }
 
-                global.awsId = conf.GetSettingData("AWSID");
-                global.awsKey = conf.GetSettingData("AWSKEY");
+                global.awsId = conf.GetSetting("AWSID");
+                global.awsKey = conf.GetSetting("AWSKEY");
+                global.awsRegion = RegionEndpoint.GetBySystemName(conf.GetSetting("REGION"));
 
-                global.backupPath = conf.GetSettingData("BACKUP_PATH");
+                global.backupPath = conf.GetSetting("BACKUP_PATH");
 
-                if (!String.IsNullOrWhiteSpace(global.backupPath)) { 
-                    global.enable_backup = true; 
-                }
-                else { 
-                    global.enable_backup = false; 
-                }
+                //if (!String.IsNullOrWhiteSpace(global.backupPath)) { 
+                //    global.enable_backup = true; 
+                //}
+                //else { 
+                //    global.enable_backup = false; 
+                //}
+
+                global.enable_backup = false;
 
                 Watcher_create();
                 Watcher_state(true, false);
@@ -91,8 +96,8 @@ namespace AWSwithGyazo_FormApp {
             else {
                 File.Create("setting.ini");
                 using (StreamWriter sw = new StreamWriter(@"setting.ini")) {
-                    sw.Write("WATCH=");
-                    sw.Write("BACKUP_PATH=");
+                    sw.WriteLine("WATCH=");
+                    sw.WriteLine("BACKUP_PATH=");
                 }
 
                 MessageBox.Show("setting.iniを作成しました。" + Environment.NewLine + "監視するパスを指定してください。"); ;
@@ -392,7 +397,7 @@ namespace AWSwithGyazo_FormApp {
         private Dictionary<string, string> Settings = new Dictionary<string, string>();
 
         /// <summary>
-        /// コンストラクタ
+        /// 設定情報を読み込み、配列に格納します。
         /// </summary>
         public Configure() {
             var lines = File.ReadAllLines(global.settingFile);
@@ -405,7 +410,7 @@ namespace AWSwithGyazo_FormApp {
         /// </summary>
         /// <param name="key">読み込みたい項目のキー</param>
         /// <returns>value</returns>
-        public string GetSettingData(string key) {
+        public string GetSetting(string key) {
             if (Settings.ContainsKey(key)) {
                 return Settings
                     .Where(x => x.Key == key)

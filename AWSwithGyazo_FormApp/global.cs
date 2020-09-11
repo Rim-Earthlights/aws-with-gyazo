@@ -1,4 +1,6 @@
-﻿namespace AWSwithGyazo_FormApp
+﻿using Amazon;
+
+namespace AWSwithGyazo_FormApp
 {
     class global
     {
@@ -17,6 +19,7 @@
         internal static readonly string settingFile = "setting.ini";
         internal static string awsId = null;
         internal static string awsKey = null;
+        internal static RegionEndpoint awsRegion = null;
         internal static string backupPath = "";
 
 
